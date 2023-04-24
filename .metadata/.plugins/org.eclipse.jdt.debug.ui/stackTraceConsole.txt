@@ -1,0 +1,2 @@
+int [] oddArr=new int[100];
+		int [] evenArr=new int[100];

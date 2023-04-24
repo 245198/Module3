@@ -1,0 +1,10 @@
+package com.ust.ioc2;
+
+public class TestDrawings {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,79 @@
+package com.ust.rest.resource;
+
+import java.math.BigDecimal;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+import lombok.Getter;
+import lombok.Setter;
+
+
+@Entity
+@Setter @Getter
+public class Product {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY) 
+	//default generationtype is AUTO, generation type is strategy the JPA should use or follow to generate primary key values
+	//when the strategy is not specified the generation uses AUTO
+	//when the underlying database is mysql the generationtype=auto means, the JPA will create a hypernet sequence in the database 
+	//for generation of primary keys
+	@Setter @Getter private long productId;
+	@Setter @Getter private String productName;
+	@Setter @Getter private String description;
+	@Setter @Getter private BigDecimal price;
+	@Setter @Getter private int qty;
+	
+//	public int getQty() {
+//		return qty;
+//	}
+//	public void setQty(int qty) {
+//		this.qty = qty;
+//	}
+//	public long getProductId() {
+//		return productId;
+//	}
+//	public void setProductId(long productId) {
+//		this.productId = productId;
+//	}
+//	public String getProductName() {
+//		return productName;
+//	}
+//	public void setProductName(String productName) {
+//		this.productName = productName;
+//	}
+//	public String getDescription() {
+//		return description;
+//	}
+//	public void setDescription(String description) {
+//		this.description = description;
+//	}
+//	public BigDecimal getPrice() {
+//		return price;
+//	}
+//	public void setPrice(BigDecimal price) {
+//		this.price = price;
+//	}
+	
+	
+
+}
+
+
+
+
+
+//select next_val as id_val from hibernate_sequence for update
+//Hibernate: update hibernate_sequence set next_val= ? where next_val=?
+//Hibernate: insert into product (description, price, product_name, qty, product_id) values (?, ?, ?, ?, ?)
+
+
+
+
+
+
+
+

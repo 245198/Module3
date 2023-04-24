@@ -1,0 +1,9 @@
+package com.ust.ioc2;
+
+public class Line {
+
+	public void drawLine()
+	{
+		System.out.println("from"+p1.geX()+", "+p1.getY()+"....to...."+p2.getX()+" ,"+p2.getY());
+	}
+}

@@ -1,0 +1,9 @@
+package com.ust.javaconfig;
+
+public class HelloWolrdImpl {
+	public String message()
+	{
+		return "This is first java Bean configuration example";
+	}
+
+}

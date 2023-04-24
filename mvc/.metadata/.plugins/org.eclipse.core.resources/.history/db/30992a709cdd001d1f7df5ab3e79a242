@@ -1,0 +1,9 @@
+package com.ust.rest.services.interfaces;
+
+import com.ust.rest.resource.Product;
+
+public interface ProductServiceInterface {
+
+	public Product add(Product product);
+	public Product getProduct(String productId);
+}
